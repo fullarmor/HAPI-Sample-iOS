@@ -1,0 +1,929 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E2A94F71B288D41008F4E77 /* UploadFileSelectorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2A94F61B288D41008F4E77 /* UploadFileSelectorTableViewController.swift */; };
+		0E5E7C1D1B3B0B6600B77ACD /* FeatureListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5E7C1C1B3B0B6600B77ACD /* FeatureListViewController.swift */; };
+		0ED6451B1B307D0800C264EF /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED6451A1B307D0800C264EF /* ShareViewController.swift */; };
+		0ED6451D1B307D0800C264EF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ED6451C1B307D0800C264EF /* MainInterface.storyboard */; };
+		0ED645201B307D0800C264EF /* HAPIShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0ED645161B307D0800C264EF /* HAPIShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0EF4F2151B33139F00D4468F /* HAPIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EF4F2141B33139F00D4468F /* HAPIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EF4F21B1B33139F00D4468F /* HAPIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF4F2101B33139F00D4468F /* HAPIKit.framework */; };
+		0EF4F2241B33139F00D4468F /* HAPIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4F2231B33139F00D4468F /* HAPIKitTests.swift */; };
+		0EF4F2271B33139F00D4468F /* HAPIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF4F2101B33139F00D4468F /* HAPIKit.framework */; };
+		0EF4F2281B33139F00D4468F /* HAPIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF4F2101B33139F00D4468F /* HAPIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0EF4F2481B332BB900D4468F /* HAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4F2441B332BB900D4468F /* HAPIClient.swift */; };
+		0EF4F2491B332BB900D4468F /* HAPIClientBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EF4F2451B332BB900D4468F /* HAPIClientBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EF4F24A1B332BB900D4468F /* HAPIClientBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4F2461B332BB900D4468F /* HAPIClientBase.m */; };
+		0EF4F24C1B334E5D00D4468F /* HAPIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF4F2101B33139F00D4468F /* HAPIKit.framework */; };
+		0EF4F24E1B334FAF00D4468F /* SEShareTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4F24D1B334FAF00D4468F /* SEShareTableViewController.swift */; };
+		0EF4F2501B337CDE00D4468F /* SEFilesAndFolderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4F24F1B337CDE00D4468F /* SEFilesAndFolderTableViewController.swift */; };
+		0EF4F2541B34AAB900D4468F /* KeyChainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4F2531B34AAB900D4468F /* KeyChainHelper.swift */; };
+		261AEF6E1AD4848200C9E95B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261AEF631AD4848200C9E95B /* AppDelegate.swift */; };
+		261AEF701AD4848200C9E95B /* FilesAndFoldersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261AEF661AD4848200C9E95B /* FilesAndFoldersTableViewController.swift */; };
+		261AEF731AD4848200C9E95B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261AEF6B1AD4848200C9E95B /* Images.xcassets */; };
+		261AEF751AD4848200C9E95B /* SharesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261AEF6D1AD4848200C9E95B /* SharesTableViewController.swift */; };
+		6BED7EF91B0BD6210025AFCC /* FileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BED7EF81B0BD6210025AFCC /* FileDetailViewController.swift */; };
+		6BF7209E1B20BE7B006C275B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF7209C1B20BE7B006C275B /* Main.storyboard */; };
+		6BF720A01B210E14006C275B /* KDCircularProgress in Resources */ = {isa = PBXBuildFile; fileRef = 6BF7209F1B210E14006C275B /* KDCircularProgress */; };
+		6BF720A41B211138006C275B /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF720A31B211138006C275B /* KDCircularProgress.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0ED6451E1B307D0800C264EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 712D944A19774FBB0087530D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ED645151B307D0800C264EF;
+			remoteInfo = HAPIShareExtension;
+		};
+		0EF4F21C1B33139F00D4468F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 712D944A19774FBB0087530D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EF4F20F1B33139F00D4468F;
+			remoteInfo = HAPIKit;
+		};
+		0EF4F21E1B33139F00D4468F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 712D944A19774FBB0087530D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 712D945119774FBB0087530D;
+			remoteInfo = "ADanywhere-iOS";
+		};
+		0EF4F2251B33139F00D4468F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 712D944A19774FBB0087530D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EF4F20F1B33139F00D4468F;
+			remoteInfo = HAPIKit;
+		};
+		712D946519774FBB0087530D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 712D944A19774FBB0087530D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 712D945119774FBB0087530D;
+			remoteInfo = CandySearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0E2A94F51B287D89008F4E77 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0ED645201B307D0800C264EF /* HAPIShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF4F22C1B33139F00D4468F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0EF4F2281B33139F00D4468F /* HAPIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0E2A94F61B288D41008F4E77 /* UploadFileSelectorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadFileSelectorTableViewController.swift; sourceTree = "<group>"; };
+		0E5E7C1C1B3B0B6600B77ACD /* FeatureListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureListViewController.swift; sourceTree = "<group>"; };
+		0ED645111B2F878600C264EF /* HAPI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HAPI.entitlements; sourceTree = "<group>"; };
+		0ED645161B307D0800C264EF /* HAPIShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HAPIShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ED645191B307D0800C264EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ED6451A1B307D0800C264EF /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		0ED6451C1B307D0800C264EF /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		0ED645241B307D2600C264EF /* HAPIShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HAPIShareExtension.entitlements; sourceTree = "<group>"; };
+		0ED645261B30800E00C264EF /* HAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EF4F2101B33139F00D4468F /* HAPIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HAPIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EF4F2131B33139F00D4468F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EF4F2141B33139F00D4468F /* HAPIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HAPIKit.h; sourceTree = "<group>"; };
+		0EF4F21A1B33139F00D4468F /* HAPIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HAPIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EF4F2221B33139F00D4468F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EF4F2231B33139F00D4468F /* HAPIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAPIKitTests.swift; sourceTree = "<group>"; };
+		0EF4F2441B332BB900D4468F /* HAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HAPIClient.swift; sourceTree = "<group>"; };
+		0EF4F2451B332BB900D4468F /* HAPIClientBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAPIClientBase.h; sourceTree = "<group>"; };
+		0EF4F2461B332BB900D4468F /* HAPIClientBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAPIClientBase.m; sourceTree = "<group>"; };
+		0EF4F24D1B334FAF00D4468F /* SEShareTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SEShareTableViewController.swift; sourceTree = "<group>"; };
+		0EF4F24F1B337CDE00D4468F /* SEFilesAndFolderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SEFilesAndFolderTableViewController.swift; sourceTree = "<group>"; };
+		0EF4F2531B34AAB900D4468F /* KeyChainHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyChainHelper.swift; sourceTree = "<group>"; };
+		261AEF5A1AD483F900C9E95B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "HAPI-iOS/Info.plist"; sourceTree = SOURCE_ROOT; };
+		261AEF631AD4848200C9E95B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		261AEF661AD4848200C9E95B /* FilesAndFoldersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesAndFoldersTableViewController.swift; sourceTree = "<group>"; };
+		261AEF6B1AD4848200C9E95B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		261AEF6D1AD4848200C9E95B /* SharesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharesTableViewController.swift; sourceTree = "<group>"; };
+		5DBCA30B1AD4A6E400B2E786 /* HAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BED7EF81B0BD6210025AFCC /* FileDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileDetailViewController.swift; sourceTree = "<group>"; };
+		6BF7209D1B20BE7B006C275B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6BF7209F1B210E14006C275B /* KDCircularProgress */ = {isa = PBXFileReference; lastKnownFileType = folder; name = KDCircularProgress; path = "HAPI-iOS/KDCircularProgress"; sourceTree = "<group>"; };
+		6BF720A31B211138006C275B /* KDCircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KDCircularProgress.swift; path = KDCircularProgress/KDCircularProgress.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0ED645131B307D0800C264EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF4F24C1B334E5D00D4468F /* HAPIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF4F20C1B33139F00D4468F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF4F2171B33139F00D4468F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF4F21B1B33139F00D4468F /* HAPIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		712D944F19774FBB0087530D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF4F2271B33139F00D4468F /* HAPIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		712D946119774FBB0087530D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0ED645171B307D0800C264EF /* HAPIShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0ED645241B307D2600C264EF /* HAPIShareExtension.entitlements */,
+				0ED6451A1B307D0800C264EF /* ShareViewController.swift */,
+				0ED6451C1B307D0800C264EF /* MainInterface.storyboard */,
+				0ED645181B307D0800C264EF /* Supporting Files */,
+				0EF4F24D1B334FAF00D4468F /* SEShareTableViewController.swift */,
+				0EF4F24F1B337CDE00D4468F /* SEFilesAndFolderTableViewController.swift */,
+			);
+			path = HAPIShareExtension;
+			sourceTree = "<group>";
+		};
+		0ED645181B307D0800C264EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0ED645191B307D0800C264EF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0EF4F2111B33139F00D4468F /* HAPIKit */ = {
+			isa = PBXGroup;
+			children = (
+				0EF4F2531B34AAB900D4468F /* KeyChainHelper.swift */,
+				0EF4F2441B332BB900D4468F /* HAPIClient.swift */,
+				0EF4F2451B332BB900D4468F /* HAPIClientBase.h */,
+				0EF4F2461B332BB900D4468F /* HAPIClientBase.m */,
+				0EF4F2141B33139F00D4468F /* HAPIKit.h */,
+				0EF4F2121B33139F00D4468F /* Supporting Files */,
+			);
+			path = HAPIKit;
+			sourceTree = "<group>";
+		};
+		0EF4F2121B33139F00D4468F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0EF4F2131B33139F00D4468F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0EF4F2201B33139F00D4468F /* HAPIKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				0EF4F2231B33139F00D4468F /* HAPIKitTests.swift */,
+				0EF4F2211B33139F00D4468F /* Supporting Files */,
+			);
+			path = HAPIKitTests;
+			sourceTree = "<group>";
+		};
+		0EF4F2211B33139F00D4468F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0EF4F2221B33139F00D4468F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		261AEF621AD4848200C9E95B /* HAPI-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0E5E7C1C1B3B0B6600B77ACD /* FeatureListViewController.swift */,
+				6BF720A31B211138006C275B /* KDCircularProgress.swift */,
+				6BF7209C1B20BE7B006C275B /* Main.storyboard */,
+				0E2A94F61B288D41008F4E77 /* UploadFileSelectorTableViewController.swift */,
+				261AEF631AD4848200C9E95B /* AppDelegate.swift */,
+				6BED7EF81B0BD6210025AFCC /* FileDetailViewController.swift */,
+				261AEF661AD4848200C9E95B /* FilesAndFoldersTableViewController.swift */,
+				261AEF6B1AD4848200C9E95B /* Images.xcassets */,
+				261AEF6D1AD4848200C9E95B /* SharesTableViewController.swift */,
+				712D945519774FBB0087530D /* Supporting Files */,
+			);
+			path = "HAPI-iOS";
+			sourceTree = SOURCE_ROOT;
+		};
+		712D944919774FBB0087530D = {
+			isa = PBXGroup;
+			children = (
+				0ED645111B2F878600C264EF /* HAPI.entitlements */,
+				6BF7209F1B210E14006C275B /* KDCircularProgress */,
+				261AEF621AD4848200C9E95B /* HAPI-iOS */,
+				5DBCA30B1AD4A6E400B2E786 /* HAPITests.xctest */,
+				0ED645161B307D0800C264EF /* HAPIShareExtension.appex */,
+				0EF4F2111B33139F00D4468F /* HAPIKit */,
+				0ED645171B307D0800C264EF /* HAPIShareExtension */,
+				0ED645261B30800E00C264EF /* HAPI.app */,
+				0EF4F2101B33139F00D4468F /* HAPIKit.framework */,
+				0EF4F21A1B33139F00D4468F /* HAPIKitTests.xctest */,
+				0EF4F2201B33139F00D4468F /* HAPIKitTests */,
+			);
+			sourceTree = "<group>";
+		};
+		712D945519774FBB0087530D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				261AEF5A1AD483F900C9E95B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			path = "../ADanywhere-iOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0EF4F20D1B33139F00D4468F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF4F2491B332BB900D4468F /* HAPIClientBase.h in Headers */,
+				0EF4F2151B33139F00D4468F /* HAPIKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0ED645151B307D0800C264EF /* HAPIShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ED645231B307D0800C264EF /* Build configuration list for PBXNativeTarget "HAPIShareExtension" */;
+			buildPhases = (
+				0ED645121B307D0800C264EF /* Sources */,
+				0ED645131B307D0800C264EF /* Frameworks */,
+				0ED645141B307D0800C264EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HAPIShareExtension;
+			productName = HAPIShareExtension;
+			productReference = 0ED645161B307D0800C264EF /* HAPIShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		0EF4F20F1B33139F00D4468F /* HAPIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EF4F2291B33139F00D4468F /* Build configuration list for PBXNativeTarget "HAPIKit" */;
+			buildPhases = (
+				0EF4F20B1B33139F00D4468F /* Sources */,
+				0EF4F20C1B33139F00D4468F /* Frameworks */,
+				0EF4F20D1B33139F00D4468F /* Headers */,
+				0EF4F20E1B33139F00D4468F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HAPIKit;
+			productName = HAPIKit;
+			productReference = 0EF4F2101B33139F00D4468F /* HAPIKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0EF4F2191B33139F00D4468F /* HAPIKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EF4F22D1B33139F00D4468F /* Build configuration list for PBXNativeTarget "HAPIKitTests" */;
+			buildPhases = (
+				0EF4F2161B33139F00D4468F /* Sources */,
+				0EF4F2171B33139F00D4468F /* Frameworks */,
+				0EF4F2181B33139F00D4468F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EF4F21D1B33139F00D4468F /* PBXTargetDependency */,
+				0EF4F21F1B33139F00D4468F /* PBXTargetDependency */,
+			);
+			name = HAPIKitTests;
+			productName = HAPIKitTests;
+			productReference = 0EF4F21A1B33139F00D4468F /* HAPIKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		712D945119774FBB0087530D /* ADanywhere-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 712D946E19774FBB0087530D /* Build configuration list for PBXNativeTarget "ADanywhere-iOS" */;
+			buildPhases = (
+				712D944E19774FBB0087530D /* Sources */,
+				712D944F19774FBB0087530D /* Frameworks */,
+				712D945019774FBB0087530D /* Resources */,
+				0E2A94F51B287D89008F4E77 /* Embed App Extensions */,
+				0EF4F22C1B33139F00D4468F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0ED6451F1B307D0800C264EF /* PBXTargetDependency */,
+				0EF4F2261B33139F00D4468F /* PBXTargetDependency */,
+			);
+			name = "ADanywhere-iOS";
+			productName = CandySearch;
+			productReference = 0ED645261B30800E00C264EF /* HAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		712D946319774FBB0087530D /* ADanywhere-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 712D947119774FBB0087530D /* Build configuration list for PBXNativeTarget "ADanywhere-iOSTests" */;
+			buildPhases = (
+				712D946019774FBB0087530D /* Sources */,
+				712D946119774FBB0087530D /* Frameworks */,
+				712D946219774FBB0087530D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				712D946619774FBB0087530D /* PBXTargetDependency */,
+			);
+			name = "ADanywhere-iOSTests";
+			productName = CandySearchTests;
+			productReference = 5DBCA30B1AD4A6E400B2E786 /* HAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		712D944A19774FBB0087530D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = MGO;
+				TargetAttributes = {
+					0ED645151B307D0800C264EF = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 2V7R6D4NFF;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					0EF4F20F1B33139F00D4468F = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 2V7R6D4NFF;
+					};
+					0EF4F2191B33139F00D4468F = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 712D945119774FBB0087530D;
+					};
+					712D945119774FBB0087530D = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 2V7R6D4NFF;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					712D946319774FBB0087530D = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = 712D944D19774FBB0087530D /* Build configuration list for PBXProject "HAPI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 712D944919774FBB0087530D;
+			productRefGroup = 712D944919774FBB0087530D;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				712D945119774FBB0087530D /* ADanywhere-iOS */,
+				712D946319774FBB0087530D /* ADanywhere-iOSTests */,
+				0ED645151B307D0800C264EF /* HAPIShareExtension */,
+				0EF4F20F1B33139F00D4468F /* HAPIKit */,
+				0EF4F2191B33139F00D4468F /* HAPIKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0ED645141B307D0800C264EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ED6451D1B307D0800C264EF /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF4F20E1B33139F00D4468F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF4F2181B33139F00D4468F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		712D945019774FBB0087530D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BF7209E1B20BE7B006C275B /* Main.storyboard in Resources */,
+				261AEF731AD4848200C9E95B /* Images.xcassets in Resources */,
+				6BF720A01B210E14006C275B /* KDCircularProgress in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		712D946219774FBB0087530D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0ED645121B307D0800C264EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF4F24E1B334FAF00D4468F /* SEShareTableViewController.swift in Sources */,
+				0EF4F2501B337CDE00D4468F /* SEFilesAndFolderTableViewController.swift in Sources */,
+				0ED6451B1B307D0800C264EF /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF4F20B1B33139F00D4468F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF4F2541B34AAB900D4468F /* KeyChainHelper.swift in Sources */,
+				0EF4F2481B332BB900D4468F /* HAPIClient.swift in Sources */,
+				0EF4F24A1B332BB900D4468F /* HAPIClientBase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF4F2161B33139F00D4468F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF4F2241B33139F00D4468F /* HAPIKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		712D944E19774FBB0087530D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E5E7C1D1B3B0B6600B77ACD /* FeatureListViewController.swift in Sources */,
+				261AEF751AD4848200C9E95B /* SharesTableViewController.swift in Sources */,
+				6BED7EF91B0BD6210025AFCC /* FileDetailViewController.swift in Sources */,
+				6BF720A41B211138006C275B /* KDCircularProgress.swift in Sources */,
+				261AEF6E1AD4848200C9E95B /* AppDelegate.swift in Sources */,
+				0E2A94F71B288D41008F4E77 /* UploadFileSelectorTableViewController.swift in Sources */,
+				261AEF701AD4848200C9E95B /* FilesAndFoldersTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		712D946019774FBB0087530D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0ED6451F1B307D0800C264EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0ED645151B307D0800C264EF /* HAPIShareExtension */;
+			targetProxy = 0ED6451E1B307D0800C264EF /* PBXContainerItemProxy */;
+		};
+		0EF4F21D1B33139F00D4468F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EF4F20F1B33139F00D4468F /* HAPIKit */;
+			targetProxy = 0EF4F21C1B33139F00D4468F /* PBXContainerItemProxy */;
+		};
+		0EF4F21F1B33139F00D4468F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 712D945119774FBB0087530D /* ADanywhere-iOS */;
+			targetProxy = 0EF4F21E1B33139F00D4468F /* PBXContainerItemProxy */;
+		};
+		0EF4F2261B33139F00D4468F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EF4F20F1B33139F00D4468F /* HAPIKit */;
+			targetProxy = 0EF4F2251B33139F00D4468F /* PBXContainerItemProxy */;
+		};
+		712D946619774FBB0087530D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 712D945119774FBB0087530D /* ADanywhere-iOS */;
+			targetProxy = 712D946519774FBB0087530D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6BF7209C1B20BE7B006C275B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BF7209D1B20BE7B006C275B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0ED645211B307D0800C264EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = HAPIShareExtension/HAPIShareExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HAPIShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0ED645221B307D0800C264EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = HAPIShareExtension/HAPIShareExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = HAPIShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0EF4F22A1B33139F00D4468F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HAPIKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0EF4F22B1B33139F00D4468F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = HAPIKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0EF4F22E1B33139F00D4468F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HAPIKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HAPI.app/HAPI";
+			};
+			name = Debug;
+		};
+		0EF4F22F1B33139F00D4468F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = HAPIKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HAPI.app/HAPI";
+			};
+			name = Release;
+		};
+		712D946C19774FBB0087530D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		712D946D19774FBB0087530D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		712D946F19774FBB0087530D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = HAPI.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "HAPI-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = HAPI;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "HAPI-iOS/HAPI-iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		712D947019774FBB0087530D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = HAPI.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "HAPI-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = HAPI;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "HAPI-iOS/HAPI-iOS-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		712D947219774FBB0087530D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HAPI-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = HAPITests;
+			};
+			name = Debug;
+		};
+		712D947319774FBB0087530D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HAPI-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HAPITests;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0ED645231B307D0800C264EF /* Build configuration list for PBXNativeTarget "HAPIShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ED645211B307D0800C264EF /* Debug */,
+				0ED645221B307D0800C264EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EF4F2291B33139F00D4468F /* Build configuration list for PBXNativeTarget "HAPIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EF4F22A1B33139F00D4468F /* Debug */,
+				0EF4F22B1B33139F00D4468F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EF4F22D1B33139F00D4468F /* Build configuration list for PBXNativeTarget "HAPIKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EF4F22E1B33139F00D4468F /* Debug */,
+				0EF4F22F1B33139F00D4468F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		712D944D19774FBB0087530D /* Build configuration list for PBXProject "HAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				712D946C19774FBB0087530D /* Debug */,
+				712D946D19774FBB0087530D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		712D946E19774FBB0087530D /* Build configuration list for PBXNativeTarget "ADanywhere-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				712D946F19774FBB0087530D /* Debug */,
+				712D947019774FBB0087530D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		712D947119774FBB0087530D /* Build configuration list for PBXNativeTarget "ADanywhere-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				712D947219774FBB0087530D /* Debug */,
+				712D947319774FBB0087530D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 712D944A19774FBB0087530D /* Project object */;
+}

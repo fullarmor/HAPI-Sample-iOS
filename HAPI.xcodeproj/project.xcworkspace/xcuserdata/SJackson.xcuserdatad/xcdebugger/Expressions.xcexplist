@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "HAPI.FilesAndFoldersTableViewController.prepareForSegue (HAPI.FilesAndFoldersTableViewController)(ObjectiveC.UIStoryboardSegue, sender : Swift.ImplicitlyUnwrappedOptional&lt;Swift.AnyObject&gt;) -&gt; ():FilesAndFoldersTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "([AnyObject])self.items">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
